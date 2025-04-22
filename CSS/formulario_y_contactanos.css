@@ -53,7 +53,7 @@
             background-color: var(--deep-brown);
         }
 
-        /* Modales */
+        /* Estilos para los modales */
         .modal {
             display: none; /* Ocultar por defecto */
             position: fixed;
