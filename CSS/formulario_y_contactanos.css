@@ -89,20 +89,27 @@
         
         @media (max-width: 900px) {
             .priority-signup-content {
-            flex-direction: column;
-            align-items: flex-start;
-            gap: 24px;
+              flex-direction: column;
+              align-items: flex-start;
+              gap: 24px;
             }
             .priority-signup-form {
-            width: 100%;
-            min-width: unset;
-            justify-content: flex-start;
+              width: 100%;
+              min-width: unset;
+              flex-direction: column;   
+              gap: 12px;               
+              justify-content: flex-start;
+              align-items: stretch;     
             }
             .priority-input-email {
-            width: 100%;
-            min-width: 160px;
+              width: 100%;
+              min-width: 160px;
             }
-        }
+            .priority-btn-signup {
+              width: 100%;    
+            }
+          }
+          
         /* Contáctanos */
         .contacto-container {
             background: #000;
@@ -226,89 +233,80 @@
         }
   
 
-        /* Estilos para los modales */
-        .modal-content {
-            background-color: var(--pure-white);
-            border-radius: 10px;
-            padding: 20px;
-            width: 90%;
-            max-width: 500px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            animation: fadeIn 0.3s ease-in-out;
-        }
-
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 1px solid var(--light-gray);
-            padding-bottom: 10px;
-        }
-
-        .modal-header h5 {
-            margin: 0;
-            font-size: 1.25rem;
-            color: var(--dark-charcoal);
-        }
-
-        .modal-header .close {
-            background: none;
-            border: none;
-            font-size: 1.5rem;
-            color: var(--dark-charcoal);
-            cursor: pointer;
-        }
-
-        .modal-body {
-            margin-top: 15px;
-            color: var(--dark-charcoal);
-            font-size: 1rem;
-        }
-
-        .modal-footer {
-            display: flex;
-            justify-content: flex-end;
-            margin-top: 20px;
-        }
-
-        .modal-footer .btn {
-            padding: 10px 20px;
-            border-radius: 5px;
+        /* Colores personalizados para los botones de los modales */
+        .modal-footer .btn.btn-primary {
+            background-color: var(--energy-orange) !important;
+            border: none !important;
+            color: var(--pure-white) !important;
             font-weight: bold;
-            cursor: pointer;
-            transition: background-color 0.3s ease;
+            transition: background-color 0.3s;
         }
-
-        .modal-footer .btn-primary {
-            background-color: var(--energy-orange);
-            border: none;
-            color: var(--pure-white);
+        .modal-footer .btn.btn-primary:hover,
+        .modal-footer .btn.btn-primary:focus {
+            background-color: var(--deep-brown) !important;
+            color: var(--pure-white) !important;
         }
-
-        .modal-footer .btn-primary:hover {
-            background-color: var(--deep-brown);
+        
+        .modal-footer .btn.btn-secondary {
+            background-color: var(--light-gray) !important;
+            border: none !important;
+            color: var(--dark-charcoal) !important;
+            font-weight: bold;
         }
-
-        .modal-footer .btn-secondary {
-            background-color: var(--light-gray);
-            border: none;
-            color: var(--dark-charcoal);
+        .modal-footer .btn.btn-secondary:hover,
+        .modal-footer .btn.btn-secondary:focus {
+            background-color: var(--earth-brown) !important;
+            color: var(--dark-charcoal) !important;
         }
-
-        .modal-footer .btn-secondary:hover {
-            background-color: var(--earth-brown);
-        }
-
-        @keyframes fadeIn {
-            from {
-            opacity: 0;
-            transform: scale(0.9);
+  
+  /* Modales */
+        @media (max-width: 600px) {
+            .modal-content {
+            width: 98vw;
+            min-width: unset;
+            max-width: 98vw;
+            padding: 14px 8px;
+            border-radius: 8px;
             }
-            to {
-            opacity: 1;
-            transform: scale(1);
+        
+            .modal-header {
+            flex-direction: column;
+            align-items: flex-start;
+            padding-bottom: 6px;
+            }
+        
+            .modal-header h5 {
+            font-size: 1.1rem;
+            margin-bottom: 6px;
+            }
+        
+            .modal-header .btn-close {
+            align-self: flex-end;
+            font-size: 1.4rem;
+            }
+        
+            .modal-body {
+            font-size: 0.97rem;
+            margin-top: 10px;
+            word-break: break-word;
+            }
+        
+            .modal-footer {
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 16px;
+            width: 100%;
+            padding: 0;
+            }
+        
+            .modal-footer .btn {
+            width: 100%;
+            padding: 12px 0;
+            font-size: 1rem;
+            border-radius: 7px;
             }
         }
+  
 
 /* Comentario */ 
   
