@@ -1,0 +1,150 @@
+:root {
+    --energy-orange: #FF8248;      /* Energía y acción */
+    --earth-brown: #BB6A3A;        /* Fuerza, estabilidad */
+    --deep-brown: #9E522A;         /* Variante más oscura para contraste */
+    --light-gray: #E3E3E3;         /* Claridad, limpieza */
+    --dark-charcoal: #252525;      /* Intensidad, fuerza visual */
+    --pure-white: #FFFFFF;         /* Pureza y equilibrio */
+  }
+
+/*Fuentes a utilizar*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap');
+
+/*font-family: "DM Sans", -> textos
+  font-family: "Oswald"   -> titulos */
+
+/* NAVBAR */
+/* --------------------- */
+.navbar {
+  background-color: var(--pure-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo_runfree {
+  height: 100px;
+}
+
+/* --------------------- */
+/* NAV LINKS */
+/* --------------------- */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-link {
+  color: var(--dark-charcoal);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--energy-orange);
+}
+
+/* --------------------- */
+/* SEARCH BAR */
+/* --------------------- */
+.search-bar {
+  border: 1px solid var(--dark-charcoal);
+  background-color: var(--light-gray);
+  border-radius: 30px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  min-width: 240px;
+  max-width: 320px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex-grow: 1;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-charcoal);
+}
+
+.search-bar button i {
+  font-size: 16px;
+}
+
+/* --------------------- */
+/* ICONO CARRITO */
+/* --------------------- */
+.cart-icon {
+  color: var(--dark-charcoal);
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cart-icon:hover {
+  color: var(--energy-orange);
+}
+
+/* --------------------- */
+/* BANNER SECTION */
+/* --------------------- */
+.banner-section {
+  background-color: #f9f9f9;
+  padding-top: 24px;
+}
+
+.carousel-inner img {
+  height: 380px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.banner-section aside img {
+  height: 185px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+
+/* --------------------- */
+/* RESPONSIVE */
+/* --------------------- */
+@media (max-width: 991.98px) {
+  .search-bar {
+    display: none !important;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .nav-link {
+    padding: 8px 0;
+  }
+
+  .banner-section .col-lg-3 {
+    display: none;
+  }
+
+  .carousel-inner img {
+    height: 260px;
+  }
+}
