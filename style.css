@@ -12,3 +12,298 @@
 
 /*font-family: "DM Sans", -> textos
   font-family: "Oswald"   -> titulos */
+
+
+  /* INICIO ANDRES */
+/* NAVBAR */
+/* --------------------- */
+.navbar {
+  background-color: var(--pure-white);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.logo_runfree {
+  height: 100px;
+}
+
+/* --------------------- */
+/* NAV LINKS */
+/* --------------------- */
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+.nav-link {
+  color: var(--dark-charcoal);
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  color: var(--energy-orange);
+}
+
+/* --------------------- */
+/* SEARCH BAR */
+/* --------------------- */
+.search-bar {
+  border: 1px solid var(--dark-charcoal);
+  background-color: var(--light-gray);
+  border-radius: 30px;
+  padding: 6px 12px;
+  display: flex;
+  align-items: center;
+  min-width: 240px;
+  max-width: 320px;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+.search-bar input {
+  border: none;
+  background: transparent;
+  outline: none;
+  flex-grow: 1;
+  padding: 6px 10px;
+  font-size: 0.9rem;
+}
+
+.search-bar button {
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--dark-charcoal);
+}
+
+.search-bar button i {
+  font-size: 16px;
+}
+
+/* --------------------- */
+/* ICONO CARRITO */
+/* --------------------- */
+.cart-icon {
+  color: var(--dark-charcoal);
+  font-size: 1.3rem;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.cart-icon:hover {
+  color: var(--energy-orange);
+}
+
+/* --------------------- */
+/* BANNER SECTION */
+/* --------------------- */
+.banner-section {
+  background-color: #f9f9f9;
+  padding-top: 24px;
+}
+
+.carousel-inner img {
+  height: 380px;
+  object-fit: cover;
+  width: 100%;
+}
+
+.banner-section aside img {
+  height: 185px;
+  object-fit: cover;
+  width: 100%;
+  border-radius: 12px;
+}
+
+
+
+/* --------------------- */
+/* RESPONSIVE */
+/* --------------------- */
+@media (max-width: 991.98px) {
+  .search-bar {
+    display: none !important;
+  }
+
+  .navbar-nav {
+    align-items: flex-start;
+    padding-top: 10px;
+  }
+
+  .nav-link {
+    padding: 8px 0;
+  }
+
+  .banner-section .col-lg-3 {
+    display: none;
+  }
+
+  .carousel-inner img {
+    height: 260px;
+  }
+}
+
+/* FIN ANDRES */
+
+/* ANA */
+
+body{
+  background-color: var(--pure-white);
+}
+
+.card {
+ margin: auto;
+}
+
+.container .card-body{
+  background-color: var(--light-gray);
+}
+
+.container .card-body .btn{
+  background-color: var(--earth-brown);
+  border: 1px solid --deep-brown;
+  color: var(--pure-white);
+}
+
+.container .card-body .btn:hover{
+  background-color: var(--energy-orange);
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease;
+}
+
+.container .card:hover{
+  transform: scale(1.1);
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.2);
+  transition: all 0.7s ease;
+}
+
+/* FIN ANA */
+
+/* INICIO ALEJA */
+
+/* Card modal */
+.modal-content {
+  background-color: var(--pure-white);
+  border-radius: 16px;
+  overflow: hidden;
+  border: none;
+  box-shadow: 0 4px 20px gray;
+}
+
+.modal-dialog {
+  max-width: 900px;
+  margin: auto;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+}
+
+/* Imagen*/
+.modal-body .col-md-6 img {
+  border-radius: 16px 0 0 16px;
+  object-fit: cover;
+
+}
+
+/* Texto */
+.modal-body .col-md-6 {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+h4 {
+  font-family: 'Oswald', sans-serif;
+  color: var(--energy-orange);
+  font-size: 1.8rem;
+}
+
+p {
+  font-size: 1rem;
+  color: var(--dark-charcoal);
+}
+
+.Precio-producto {
+  font-size: 1.2rem;
+  color: var(--energy-orange);
+} 
+
+.text-muted {
+  font-size: 1.2rem;
+}
+
+/* Boton musica-cerrar-agregar */
+.btn-primary, .btn-outline-secondary, .btn-agregar {
+  font-size: 1.1rem;
+  border-radius: 8px;
+  padding: 12px;
+  margin-top: 10px;
+}
+
+.btn-agregar{
+  font-weight:bold;
+  background-color: var(--energy-orange);
+  border: none;
+  color: var(--dark-charcoal);
+}
+
+.btn-agregar:hover{
+  background-color: var(--light-gray);
+}
+
+.btn-primary {
+  background-color: var(--deep-brown);
+  color: var(--pure-white);
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: var(--energy-orange);
+  
+}
+
+.btn-outline-secondary {
+  background-color: var(--light-gray);
+  border: none;
+  color: var(--dark-charcoal);
+}
+
+.btn-outline-secondary:hover {
+  background-color: var(--energy-orange);
+  color: var(--pure-white);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .modal-dialog {
+    max-width: 100%;
+  }
+
+  .modal-body {
+    flex-direction: column;
+  }
+
+  .modal-body .col-md-6 {
+    padding: 10px;
+  }
+
+  .modal-body .col-md-6 img {
+    border-radius: 10px;
+  }
+}
+
+
+/* FIN ALEJA */
