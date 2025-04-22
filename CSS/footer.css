@@ -1,0 +1,120 @@
+:root {
+    --energy-orange: #FF8248;      /* Energía y acción */
+    --earth-brown: #BB6A3A;        /* Fuerza, estabilidad */
+    --deep-brown: #9E522A;         /* Variante más oscura para contraste */
+    --light-gray: #E3E3E3;         /* Claridad, limpieza */
+    --dark-charcoal: #252525;      /* Intensidad, fuerza visual */
+    --pure-white: #FFFFFF;         /* Pureza y equilibrio */
+  }
+
+/*Fuentes a utilizar*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap');
+
+/*font-family: "DM Sans", -> textos
+font-family: "Oswald"   -> titulos */
+  
+  body {
+    font-family: "DM Sans", sans-serif;
+  }
+  
+  /* Footer principal */
+  footer {
+    background-color: var(--dark-charcoal);
+    color: var(--light-gray);
+    font-size: 0.95rem;
+  }
+  
+  /* Iconos grandes */
+  footer i {
+    color: var(--energy-orange);
+  }
+  
+  /* Títulos */
+  footer h6 {
+    font-family: "Oswald", sans-serif;
+    color: var(--pure-white);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+  /* Enlaces */
+  .footer-link {
+    color: var(--light-gray);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  .footer-link:hover {
+    color: var(--energy-orange);
+    text-decoration: underline;
+  }
+  
+  /* Botón de suscripción */
+  footer .btn-warning {
+    background-color: var(--energy-orange);
+    border: none;
+    padding: 0.5rem 0.75rem;
+  }
+  footer .btn-warning:hover {
+    background-color: var(--earth-brown);
+  }
+  
+  /* Input del newsletter */
+  footer input[type="email"] {
+    background-color: var(--pure-white);
+    border: 1px solid var(--light-gray);
+    font-family: "DM Sans", sans-serif;
+    font-size: 0.9rem;
+  }
+  
+  /* Redes sociales */
+  footer .bi {
+    font-size: 1.2rem;
+  }
+  footer .bi:hover {
+    color: var(--energy-orange);
+  }
+  
+  /* Separadores y espaciado */
+  .border-light {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  footer .border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .footer-links-products  li:nth-child(6) a { /* Estilo al tercer enlace */
+    color:var(--energy-orange);
+    text-decoration: underline;
+  }
+
+
+
+  .social-icons .social-icon {
+    background-color: var(--pure-white);  /* Fondo blanco por defecto */
+    color: var(--energy-orange);          /* Ícono naranja */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons .social-icon:hover {
+    background-color: var(--energy-orange); /* Fondo naranja al hover */
+    color: var(--pure-white);               /* Ícono blanco al hover */
+    transform: scale(1.15);
+    box-shadow: 0 0 10px var(--energy-orange);
+  }
+  
+  .social-icons .social-icon i {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    color: inherit !important;
+  }
+
