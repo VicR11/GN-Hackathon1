@@ -1,5 +1,19 @@
 
 
+//Carito de compras
+let cantidad = 0;
+const botonesAgregar = document.querySelectorAll('.btn-agregar-carrito');
+const contador = document.getElementById('cart-count');
+
+botonesAgregar.forEach((boton) => {
+  boton.addEventListener('click', () => {
+    cantidad++;
+    contador.textContent = cantidad;
+    
+  });
+});
+
+
 // contactenos
 
 document.querySelector('.priority-btn-signup').addEventListener('click', function(event) {
