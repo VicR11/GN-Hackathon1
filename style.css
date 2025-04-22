@@ -13,7 +13,10 @@
 /*font-family: "DM Sans", -> textos
   font-family: "Oswald"   -> titulos */
 
-
+  body {
+    font-family: "DM Sans", sans-serif;
+  }
+  
   /* INICIO ANDRES */
 /* NAVBAR */
 /* --------------------- */
@@ -304,7 +307,6 @@ p {
     border-radius: 10px;
   }
 }
-
 
 /* FIN ALEJA */
 
@@ -612,5 +614,98 @@ p {
           }
       }
 
-
       /* FIN FRANCISCO */
+ /* INICIO MONICA*/
+
+  /* Footer principal */
+  footer {
+    background-color: var(--dark-charcoal);
+    color: var(--light-gray);
+    font-size: 0.95rem;
+  }
+
+
+
+  
+  /* Iconos grandes */
+  footer i {
+    color: var(--energy-orange);
+  }
+  
+  /* Títulos */
+  footer h6 {
+    font-family: "Oswald", sans-serif;
+    color: var(--pure-white);
+    margin-bottom: 1rem;
+    font-size: 1rem;
+  }
+  
+
+  /* Enlaces */
+  .footer-link {
+    color: var(--light-gray);
+    text-decoration: none;
+    display: block;
+    margin-bottom: 0.5rem;
+    transition: color 0.3s ease;
+  }
+  .footer-link:hover {
+    color: var(--energy-orange);
+    text-decoration: underline;
+  }
+  
+  footer .footer-container p{
+    color: var(--pure-white);
+  }
+  
+  /* Redes sociales */
+  footer .bi {
+    font-size: 1.2rem;
+  }
+  footer .bi:hover {
+    color: var(--energy-orange);
+  }
+  
+  /* Separadores y espaciado */
+  .border-light {
+    border-color: rgba(255, 255, 255, 0.1) !important;
+  }
+  
+  footer .border-bottom {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+  }
+
+  .footer-links-products  li:nth-child(6) a { /* Estilo al tercer enlace */
+    color:var(--energy-orange);
+    text-decoration: underline;
+  }
+
+
+
+  .social-icons .social-icon {
+    background-color: var(--pure-white);  /* Fondo blanco por defecto */
+    color: var(--energy-orange);          /* Ícono naranja */
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icons .social-icon:hover {
+    background-color: var(--energy-orange); /* Fondo naranja al hover */
+    color: var(--pure-white);               /* Ícono blanco al hover */
+    transform: scale(1.15);
+    box-shadow: 0 0 10px var(--energy-orange);
+  }
+  
+  .social-icons .social-icon i {
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    color: inherit !important;
+  }
+
+/* FIN MONICA */
