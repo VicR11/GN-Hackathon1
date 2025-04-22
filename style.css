@@ -6,3 +6,9 @@
     --dark-charcoal: #252525;      /* Intensidad, fuerza visual */
     --pure-white: #FFFFFF;         /* Pureza y equilibrio */
   }
+
+/*Fuentes a utilizar*/
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Oswald:wght@200..700&display=swap');
+
+/*font-family: "DM Sans", -> textos
+  font-family: "Oswald"   -> titulos */
