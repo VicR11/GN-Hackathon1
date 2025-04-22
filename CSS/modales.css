@@ -54,16 +54,26 @@
     font-size: 1.2rem;
   }
   
-  /* Boton musica-cerrar */
-  .btn-primary, .btn-outline-secondary {
+  /* Boton musica-cerrar-agregar */
+  .btn-primary, .btn-outline-secondary, .btn-agregar {
     font-size: 1.1rem;
     border-radius: 8px;
     padding: 12px;
     margin-top: 10px;
   }
+
+  .btn-agregar{
+    font-weight:bold;
+    background-color: var(--energy-orange);
+    border: none;
+    color: var(--dark-charcoal);
+  }
+
+  .btn-agregar:hover{
+    background-color: var(--light-gray);
+  }
   
   .btn-primary {
-    font-weight:bold;
     background-color: var(--deep-brown);
     color: var(--pure-white);
     border: none;
@@ -75,7 +85,7 @@
   }
   
   .btn-outline-secondary {
-    background-color: --light-gray;
+    background-color: var(--light-gray);
     border: none;
     color: var(--dark-charcoal);
   }
