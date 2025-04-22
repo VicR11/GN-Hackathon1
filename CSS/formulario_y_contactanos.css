@@ -7,51 +7,224 @@
         }
 
         /* Formulario */
-        .container h3 {
-            color: var(--energy-orange);
-            font-family: 'Oswald', sans-serif;
+        .priority-signup-container {
+            background: #000;
+            border-radius: 16px;
+            padding: 32px 32px;
+            max-width: 1100px;   
+            width: 90%;        
+            margin: 40px auto;   
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+          }
+          
+        .priority-signup-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 40px;
         }
-
-        .container .form-control {
-            border: 1px solid var(--earth-brown);
-            border-radius: 5px;
-            padding: 10px;
+        
+        .priority-signup-text small {
+            color: #b3b3b3;
+            font-size: 15px;
+            letter-spacing: 1px;
+            display: block;
+            margin-bottom: 8px;
         }
-
-        .container .btn-primary {
-            background-color: var(--energy-orange);
+        
+        .priority-signup-text strong {
+            color: #fff;
+            font-size: 26px;
+            font-weight: 700;
+            letter-spacing: 0.2px;
+        }
+        
+        .priority-signup-form {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            min-width: 350px;
+            flex: 1;
+            justify-content: flex-end;
+        }
+        
+        .priority-input-email {
+            background: transparent;
             border: none;
-            color: var(--pure-white);
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+            border-bottom: 2px solid #b3b3b3;
+            color: #fff;
+            font-size: 17px;
+            padding: 10px 8px 8px 0;
+            width: 250px;
+            outline: none;
+            transition: border-color 0.2s;
         }
-
-        .container .btn-primary:hover {
-            background-color: var(--deep-brown);
+        
+        .priority-input-email::placeholder {
+            color: #b3b3b3;
+            opacity: 1;
         }
-
+        
+        .priority-input-email:focus {
+            border-bottom: 2px solid #fff;
+        }
+        
+        .priority-btn-signup {
+            background: #fff;
+            color: #222;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 36px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            width: 90%;
+        }
+        
+        .priority-btn-signup:hover {
+            background: #f2f2f2;
+        }
+        
+        @media (max-width: 900px) {
+            .priority-signup-content {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 24px;
+            }
+            .priority-signup-form {
+            width: 100%;
+            min-width: unset;
+            justify-content: flex-start;
+            }
+            .priority-input-email {
+            width: 100%;
+            min-width: 160px;
+            }
+        }
         /* Contáctanos */
-        .container .form-label {
-            color: var(--dark-charcoal);
-            font-weight: bold;
+        .contacto-container {
+            background: #000;
+            border-radius: 16px;
+            padding: 32px;
+            max-width: 1100px;
+            width: 90%;
+            margin: 40px auto;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
         }
-
-        .container textarea.form-control {
-            resize: none;
-            border: 1px solid var(--earth-brown);
+        
+        .contacto-content {
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 40px;
         }
-
-        .container .text-center button {
-            background-color: var(--energy-orange);
+        
+        .contacto-info {
+            flex: 1;
+            min-width: 260px;
+        }
+        
+        .contacto-titulo {
+            color: #fff;
+            font-size: 26px;
+            font-weight: 700;
+            margin-bottom: 24px;
+            letter-spacing: 0.2px;
+        }
+        
+        .contacto-campo {
+            margin-bottom: 18px;
+        }
+        
+        .contacto-label {
+            color: #b3b3b3;
+            font-size: 15px;
+            font-weight: 600;
+            display: block;
+            margin-bottom: 6px;
+            letter-spacing: 1px;
+        }
+        
+        .contacto-input, .contacto-textarea {
+            background: #fff !important;
+            color: #222 !important;
             border: none;
-            color: var(--pure-white);
-            font-weight: bold;
-            transition: background-color 0.3s ease;
+            border-bottom: 2px solid #b3b3b3;
+            font-size: 17px;
+            padding: 14px 12px 12px 12px; /* Más padding vertical y horizontal */
+            width: 100%;
+            outline: none;
+            transition: border-color 0.2s;
+            border-radius: 6px;
+            resize: none;
+            box-shadow: 0 1px 2px rgba(0,0,0,0.04);
+            box-sizing: border-box;
+            line-height: 1.4;
         }
-
-        .container .text-center button:hover {
-            background-color: var(--deep-brown);
+        
+        .contacto-input::placeholder, .contacto-textarea::placeholder {
+            color: #888;
+            opacity: 1;
         }
+        
+        .contacto-input:focus, .contacto-textarea:focus {
+            border-bottom: 2px solid #000;
+            background: #f9f9f9;
+        }
+        
+        .contacto-textarea {
+            min-height: 140px;
+            max-height: 300px;
+            resize: vertical;
+        }
+        
+        .contacto-form {
+            display: flex;
+            flex-direction: column;
+            flex: 1.2;
+            min-width: 300px;
+            gap: 16px;
+            justify-content: flex-end;
+        }
+        
+        .contacto-btn {
+            background: #fff;
+            color: #222;
+            border: none;
+            border-radius: 8px;
+            padding: 14px 36px;
+            font-size: 16px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            align-self: flex-end;
+            margin-top: 12px;
+            width: 60%;
+        }
+        
+        .contacto-btn:hover {
+            background: #f2f2f2;
+        }
+        
+        @media (max-width: 900px) {
+            .contacto-content {
+            flex-direction: column;
+            gap: 24px;
+            }
+            .contacto-form {
+            width: 100%;
+            min-width: unset;
+            align-items: stretch;
+            }
+            .contacto-btn {
+            width: 100%;
+            align-self: stretch;
+            }
+        }
+  
 
         /* Estilos para los modales */
         .modal-content {

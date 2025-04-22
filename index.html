@@ -17,98 +17,99 @@
     <main>
 
     </main>
+        
         <!-- Formulario -->
-        <div class="container my-5 formulario">
-            <div class="row justify-content-center">
-                <div class="col-md-6">
-                    <h3 class="text-center mb-3 titulo-formulario">Suscríbete a nuestro boletín</h3>
-                    <form>
-                        <div class="input-group">
-                            <input type="email" class="form-control input-email" placeholder="Ingresa tu email" aria-label="Email" required>
-                            <button class="btn btn-primary btn-suscribirme" type="submit">Suscribirme</button>
-                        </div>
-                    </form>
-                </div>
+        <div class="priority-signup-container my-5">
+            <div class="priority-signup-content">
+            <div class="priority-signup-text">
+                <small>Club RunFree</small>
+                <strong>Ten acceso a promociones y noticias</strong>
+            </div>
+            <form class="priority-signup-form">
+                <input type="email" class="priority-input-email" placeholder="Correo electrónico" required>
+                <button type="submit" class="priority-btn-signup">Suscribirme</button>
+            </form>
             </div>
         </div>
-
+        
         <!-- Modal Formulario -->
         <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="subscribeModalLabel">Suscripción Exitosa</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Te has suscrito exitosamente a nuestro boletín. ¡Gracias por unirte!
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="subscribeModalLabel">Suscripción Exitosa</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                Te has suscrito exitosamente a nuestro boletín. ¡Gracias por unirte!
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
                 </div>
             </div>
+            </div>
         </div>
-
+        
         <script>
-            document.querySelector('.btn-suscribirme').addEventListener('click', function(event) {
-                event.preventDefault(); // Evita el envío real del formulario
-                const subscribeModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
-                subscribeModal.show();
+            document.querySelector('.priority-btn-signup').addEventListener('click', function(event) {
+            event.preventDefault();
+            const subscribeModal = new bootstrap.Modal(document.getElementById('subscribeModal'));
+            subscribeModal.show();
             });
         </script>
-
+  
         <!-- Contáctanos -->
-        <div class="container my-5 formulario-contacto">
-            <div class="row justify-content-center">
-            <div class="col-md-6">
-            <h3 class="text-center mb-3 titulo-contacto">Contáctanos</h3>
-            <form>
-            <div class="mb-3">
-                <label for="name" class="form-label label-nombre">Nombre</label>
-                <input type="text" class="form-control input-nombre" id="name" placeholder="Ingresa tu nombre" required>
-            </div>
-            <div class="mb-3">
-                <label for="email" class="form-label label-email">Correo Electrónico</label>
-                <input type="email" class="form-control input-email" id="email" placeholder="Ingresa tu correo electrónico" required>
-            </div>
-            <div class="mb-3">
-                <label for="message" class="form-label label-mensaje">Mensaje</label>
-                <textarea class="form-control input-mensaje" id="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
-            </div>
-            <div class="text-center">
-                <button type="submit" class="btn btn-primary btn-enviar">Enviar</button>
-            </div>
-            </form>
-            </div>
-            </div>
+<div class="contacto-container">
+    <div class="contacto-content">
+      <!-- Columna Izquierda -->
+      <div class="contacto-info">
+        <h3 class="contacto-titulo">Contáctanos</h3>
+        <div class="contacto-campo">
+          <label for="name" class="contacto-label">Nombre</label>
+          <input type="text" class="contacto-input" id="name" placeholder="Ingresa tu nombre" required>
         </div>
-        <!-- Modal Contactenos-->
-        <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="successModalLabel">Solicitud Enviada</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        Tu solicitud ha sido enviada correctamente. Nos pondremos en contacto contigo pronto.
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-                    </div>
-                </div>
-            </div>
+        <div class="contacto-campo">
+          <label for="email" class="contacto-label">Correo Electrónico</label>
+          <input type="email" class="contacto-input" id="email" placeholder="Ingresa tu correo electrónico" required>
         </div>
-
-        <script>
-            document.querySelector('.btn-enviar').addEventListener('click', function(event) {
-                event.preventDefault(); // Evita el envío real del formulario
-                const successModal = new bootstrap.Modal(document.getElementById('successModal'));
-                successModal.show();
-            });
-        </script>
-
+      </div>
+      <!-- Columna Derecha -->
+      <form class="contacto-form">
+        <div class="contacto-campo">
+          <label for="message" class="contacto-label">Mensaje</label>
+          <textarea class="contacto-input contacto-textarea" id="message" rows="7" placeholder="Escribe tu mensaje" required></textarea>
+        </div>
+        <button type="submit" class="contacto-btn">Enviar</button>
+      </form>
+    </div>
+  </div>
+  
+  <!-- Modal Contactenos-->
+  <div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="successModalLabel">Solicitud Enviada</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Tu solicitud ha sido enviada correctamente. Nos pondremos en contacto contigo pronto.
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <script>
+    document.querySelector('.contacto-btn').addEventListener('click', function(event) {
+      event.preventDefault(); // Evita el envío real del formulario
+      const successModal = new bootstrap.Modal(document.getElementById('successModal'));
+      successModal.show();
+    });
+  </script>
+  
     <footer>
 
     </footer>
