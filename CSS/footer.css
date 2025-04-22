@@ -17,12 +17,19 @@ font-family: "Oswald"   -> titulos */
     font-family: "DM Sans", sans-serif;
   }
   
+
+
+
+  
   /* Footer principal */
   footer {
     background-color: var(--dark-charcoal);
     color: var(--light-gray);
     font-size: 0.95rem;
   }
+
+
+
   
   /* Iconos grandes */
   footer i {
@@ -37,6 +44,7 @@ font-family: "Oswald"   -> titulos */
     font-size: 1rem;
   }
   
+
   /* Enlaces */
   .footer-link {
     color: var(--light-gray);
@@ -50,23 +58,7 @@ font-family: "Oswald"   -> titulos */
     text-decoration: underline;
   }
   
-  /* Botón de suscripción */
-  footer .btn-warning {
-    background-color: var(--energy-orange);
-    border: none;
-    padding: 0.5rem 0.75rem;
-  }
-  footer .btn-warning:hover {
-    background-color: var(--earth-brown);
-  }
-  
-  /* Input del newsletter */
-  footer input[type="email"] {
-    background-color: var(--pure-white);
-    border: 1px solid var(--light-gray);
-    font-family: "DM Sans", sans-serif;
-    font-size: 0.9rem;
-  }
+
   
   /* Redes sociales */
   footer .bi {
