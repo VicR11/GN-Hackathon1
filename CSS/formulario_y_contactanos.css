@@ -1,0 +1,54 @@
+        body {
+            font-family: 'DM Sans', sans-serif;
+            background-color: var(--light-gray);
+            color: var(--dark-charcoal);
+            margin: 0;
+            padding: 0;
+        }
+
+        /* Formulario simple */
+        .container h3 {
+            color: var(--energy-orange);
+            font-family: 'Oswald', sans-serif;
+        }
+
+        .container .form-control {
+            border: 1px solid var(--earth-brown);
+            border-radius: 5px;
+            padding: 10px;
+        }
+
+        .container .btn-primary {
+            background-color: var(--energy-orange);
+            border: none;
+            color: var(--pure-white);
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .container .btn-primary:hover {
+            background-color: var(--deep-brown);
+        }
+
+        /* Contáctanos */
+        .container .form-label {
+            color: var(--dark-charcoal);
+            font-weight: bold;
+        }
+
+        .container textarea.form-control {
+            resize: none;
+            border: 1px solid var(--earth-brown);
+        }
+
+        .container .text-center button {
+            background-color: var(--energy-orange);
+            border: none;
+            color: var(--pure-white);
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+
+        .container .text-center button:hover {
+            background-color: var(--deep-brown);
+        }
